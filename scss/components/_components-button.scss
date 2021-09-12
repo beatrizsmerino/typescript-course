@@ -1,0 +1,35 @@
+// COMPONENTS
+// button
+// =================================================
+
+.button {
+	padding: 0.8rem 1rem;
+	font-size: 1.6rem;
+	border: 0.2rem solid $color-black;
+	border-radius: 0.5rem;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+
+	&--bg-color-1 {
+		color: $color-white;
+		border-color: $color-brand-1;
+		background-color: $color-brand-1;
+
+		&:hover {
+			color: $color-brand-1;
+			background-color: $color-white;
+		}
+	}
+
+	&--line-color-1 {
+		color: $color-brand-1;
+		border-color: $color-brand-1;
+		background-color: $color-white;
+
+		&:hover {
+			color: $color-white;
+			background-color: $color-brand-1;
+		}
+	}
+}

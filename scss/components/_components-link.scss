@@ -1,0 +1,14 @@
+// COMPONENTS
+// link
+// =================================================
+
+.link {
+	text-decoration: underline;
+	font-weight: 500;
+	color: $color-brand-1;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: none;
+	}
+}

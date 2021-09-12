@@ -40,9 +40,77 @@
 				</h1>
 			</div>
 
-			<section class="page__section">
+			<section class="exercise-1 page__section">
 				<div class="page__container page__inner">
+					<h2 class="page__subtitle">
+						Exercise 1
+					</h2>
 
+					<article class="page__article">
+						<h3 class="h3">
+							Vanilla Javascript
+						</h3>
+						<div class="page__description text">
+							<p>
+								When you get the value of an input of type number you must transform it into a
+								<strong>number</strong> before operating on it, since it will always return
+								a <strong>string</strong> and concatenate the values.
+							</p>
+						</div>
+
+						<div class="page__content">
+							<form class="form" action="">
+								<fieldset class="fieldset">
+									<div class="form__column form__column--3">
+										<div class="form__item">
+											<label for="inputNum1" class="label">
+												Number 1
+											</label>
+											<input type="number" name="num1" id="ej1VjInputNum1"
+												class="form__field form__field--color-1">
+										</div>
+
+										<div class="form__item">
+											<label for="inputNum2" class="label">
+												Number 2
+											</label>
+											<input type="number" name="num2" id="ej1VjInputNum2"
+												class="form__field form__field--color-1">
+										</div>
+
+										<div class="form__item">
+											<label for="ej1VjInputNumFormat" class="check">
+												<input type="checkbox" name="inputNumFormat" id="ej1VjInputNumFormat"
+													class="check__input">
+												<span class="check__mark"></span>
+												<span class="check__label">
+													Formatted values
+												</span>
+											</label>
+										</div>
+									</div>
+								</fieldset>
+
+								<div class="form__button-list">
+									<button id="ej1VjButtonSum" class="button button--bg-color-1">
+										Sum
+									</button>
+									<button id="ej1VjButtonReset" class="button button--line-color-1">
+										Reset
+									</button>
+								</div>
+							</form>
+
+							<div class="form__result">
+								<p>
+									Result:
+									<span id="ej1VjResultSum" class="form__result--value">
+										num1 + num2
+									</span>
+								</p>
+							</div>
+						</div>
+					</article>
 				</div>
 			</section>
 		</main>
