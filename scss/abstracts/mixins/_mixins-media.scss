@@ -1,0 +1,54 @@
+// ABSTRACTS - MIXINS
+// media
+// =================================================
+
+/**
+ * @function media
+ * @description This mixin 'media' generate the rule @media in a way more easy, passing only the parameters of size breakpoint, min/max and width/height.
+ * @param {num|string} $breakpoint - ($var|sizePX|size%|sizeEM|sizeREM) - Breakpoint to define the media query. It accepts 'numbers' with and without units (px will be asigned if unitless) or 'key' within a previous $breakpoints map defined (see @optional), or variables previously defined.
+ * @param {string} $rule - Default: max (max|min) - Defines if it will be a max-width or min-width mediaquery.
+ * @param {string} $dimension - Default: width (width|height) - Defines if it will be a width or height mediaquery.
+ * @return {bool} True/false if the item is contained in the list.
+ * @see Used in: {@link abstracts/mixins/mixins-media.sass}
+ */
+@mixin media($breakpoint, $rule: "max", $dimension: "width") {
+	$rules: "max", "min";
+	$dimensions: "width", "height";
+	$units: "px", "em", "rem", "%", "vw", "vh";
+
+	@if not contains($rules, $rule) {
+		$rule: "max";
+	}
+
+	@if not contains($dimensions, $dimension) {
+		$rule: "width";
+	}
+
+	@if type-of($breakpoint) == number {
+		@if unitless($breakpoint) {
+			@media (#{$rule}-#{$dimension}: #{$breakpoint + "px"}) {
+				@content;
+			}
+		} @else if contains($units, unit($breakpoint)) {
+			@media (#{$rule}-#{$dimension}: #{$breakpoint}) {
+				@content;
+			}
+		} @else {
+			@error "Invalid units provided";
+		}
+	} @else if variable-exists(breakpoints) {
+		@if map-has-key($breakpoints, $breakpoint) {
+			@media (#{$rule}-#{$dimension}: #{inspect(map-get($breakpoints, $breakpoint))}) {
+				@content;
+			}
+		} @else {
+			@error "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($breakpoints)}.";
+		}
+	} @else if variable-exists(breakpoint) {
+		@media (#{$rule}-#{$dimension}: #{$breakpoint}) {
+			@content;
+		}
+	} @else {
+		@error "Neither $breakpoints map nor variable provided are defined";
+	}
+}
