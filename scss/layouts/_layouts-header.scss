@@ -1,0 +1,17 @@
+// LAYOUTS
+// header
+// =================================================
+
+.header {
+	padding: 2rem 0;
+	color: $color-brand-2;
+	background-color: $color-brand-1;
+
+	&__title {
+		font-size: 2.5rem;
+
+		&--main {
+			font-weight: 500;
+		}
+	}
+}

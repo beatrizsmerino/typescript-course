@@ -1,0 +1,31 @@
+// PARTIALS SASS
+// =================================================
+
+// ABSTRACTS
+// -------------------
+@import "abstracts/variables/variables-colors";
+@import "abstracts/variables/variables-fonts";
+@import "abstracts/variables/variables-breakpoints";
+// -------------------
+@import "abstracts/functions/functions-contains";
+// -------------------
+@import "abstracts/mixins/mixins-media";
+
+// BASE
+// -------------------
+@import "base/base-reset";
+@import "base/base-general";
+
+// COMPONENTS
+// -------------------
+@import "components/components-page";
+@import "components/components-sticky";
+
+// LAYOUTS
+// -------------------
+@import "layouts/layouts-header";
+@import "layouts/layouts-main";
+@import "layouts/layouts-footer";
+
+// PAGES
+// -------------------

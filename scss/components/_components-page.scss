@@ -1,0 +1,51 @@
+// COMPONENTS
+// page
+// =================================================
+
+.page {
+	&__body {
+		overflow-x: hidden;
+	}
+
+	&__container {
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	&__inner {
+		padding-right: 3rem;
+		padding-left: 3rem;
+	}
+
+	&__title {
+		margin: $font-h1-margin;
+		font-size: $font-h1-size;
+		font-weight: 400;
+		color: $color-brand-1;
+
+		@include media("md") {
+			margin-bottom: 3rem;
+		}
+	}
+
+	&__subtitle {
+		margin: $font-h2-margin;
+		font-size: $font-h2-size;
+		color: $color-brand-1;
+	}
+
+	&__section {
+		padding: 8rem 0;
+
+		@include media("md") {
+			padding: 6rem 0;
+		}
+	}
+
+	&__article {
+		&:not(:last-child) {
+			margin-bottom: 7rem;
+		}
+	}
+}
