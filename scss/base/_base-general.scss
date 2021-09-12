@@ -1,0 +1,66 @@
+// BASE
+// general
+// =================================================
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $font-brand-1;
+	font-size: $font-size;
+	font-weight: 300;
+	background-color: $color-white;
+}
+
+.h1 {
+	margin: $font-h1-margin;
+	font-size: $font-h1-size;
+}
+
+.h2 {
+	margin: $font-h2-margin;
+	font-size: $font-h2-size;
+}
+
+.h3 {
+	margin: $font-h3-margin;
+	font-size: $font-h3-size;
+}
+
+.h4 {
+	margin: $font-h4-margin;
+	font-size: $font-h4-size;
+}
+
+.h5 {
+	margin: $font-h5-margin;
+	font-size: $font-h5-size;
+}
+
+.h6 {
+	margin: $font-h6-margin;
+	font-size: $font-h6-size;
+}
+
+p {
+	&:not(:last-of-type) {
+		margin-bottom: 2rem;
+	}
+
+	&:only-of-type {
+		margin-bottom: 0;
+	}
+}
+
+b {
+	font-weight: 700;
+}
+
+i {
+	font-style: italic;
+}
+
+img {
+	width: 100%;
+}

@@ -1,0 +1,13 @@
+// LAYOUTS
+// footer
+// =================================================
+
+.footer {
+	padding: 2rem 0;
+	color: $color-brand-2;
+	background-color: $color-brand-1;
+
+	&__copyright {
+		font-size: 1.4rem;
+	}
+}
