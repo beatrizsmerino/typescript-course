@@ -6,9 +6,11 @@
 
 # TypeScript Course
 
-## This repository was created to learn and test the typescript language
-
 ![GitBible](README/images/typescript-course.svg)
+
+## DESCRIPTION
+
+This repository was created to learn and test the typescript language
 
 ## NPM SCRIPTS
 
@@ -39,3 +41,7 @@ npm run css
 ```bash
 npm run build
 ```
+
+## RESOURCES
+
+YouTube: [TypeScript Course for Beginners 2021 - Learn TypeScript from Scratch!](https://www.youtube.com/watch?v=BwuLxPH8IDs)
