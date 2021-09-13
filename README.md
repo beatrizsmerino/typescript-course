@@ -9,3 +9,33 @@
 ## This repository was created to learn and test the typescript language
 
 ![GitBible](README/images/typescript-course.svg)
+
+## NPM SCRIPTS
+
+### Development
+
+This project uses the [npm scripts](https://docs.npmjs.com/cli/scripts) to run the development environment.
+
+### Install the dependencies
+
+```bash
+npm install
+```
+
+### Execute a live server (localhost)
+
+```bash
+npm run serve
+```
+
+### Compile files from scss to css
+
+```bash
+npm run css
+```
+
+### Build files and watch for changes
+
+```bash
+npm run build
+```
