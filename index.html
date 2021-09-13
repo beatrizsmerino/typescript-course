@@ -13,7 +13,7 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
 			rel="stylesheet">
-		<link rel="stylesheet" href="css/styles.min.css">
+		<link rel="stylesheet" href="./css/styles.min.css">
 		<title>
 			TypeScript Course
 		</title>
@@ -47,8 +47,8 @@
 					</h2>
 
 					<article class="page__article">
-						<h3 class="h3">
-							Vanilla Javascript
+						<h3 class="h3 h3--bg-color-2">
+							JavaScript
 						</h3>
 						<div class="page__description text">
 							<p>
@@ -66,7 +66,7 @@
 											<label for="inputNum1" class="label">
 												Number 1
 											</label>
-											<input type="number" name="num1" id="ej1VjInputNum1"
+											<input type="number" name="num1" id="ej1JSInputNum1"
 												class="form__field form__field--color-1">
 										</div>
 
@@ -74,13 +74,13 @@
 											<label for="inputNum2" class="label">
 												Number 2
 											</label>
-											<input type="number" name="num2" id="ej1VjInputNum2"
+											<input type="number" name="num2" id="ej1JSInputNum2"
 												class="form__field form__field--color-1">
 										</div>
 
 										<div class="form__item">
-											<label for="ej1VjInputNumFormat" class="check">
-												<input type="checkbox" name="inputNumFormat" id="ej1VjInputNumFormat"
+											<label for="ej1JSInputNumFormat" class="check">
+												<input type="checkbox" name="inputNumFormat" id="ej1JSInputNumFormat"
 													class="check__input">
 												<span class="check__mark"></span>
 												<span class="check__label">
@@ -92,10 +92,10 @@
 								</fieldset>
 
 								<div class="form__button-list">
-									<button id="ej1VjButtonSum" class="button button--bg-color-1">
+									<button id="ej1JSButtonSum" class="button button--bg-color-1">
 										Sum
 									</button>
-									<button id="ej1VjButtonReset" class="button button--line-color-1">
+									<button id="ej1JSButtonReset" class="button button--line-color-1">
 										Reset
 									</button>
 								</div>
@@ -104,7 +104,65 @@
 							<div class="form__result">
 								<p>
 									Result:
-									<span id="ej1VjResultSum" class="form__result--value">
+									<span id="ej1JSResultSum" class="form__result--value">
+										num1 + num2
+									</span>
+								</p>
+							</div>
+						</div>
+					</article>
+
+					<article class="page__article">
+						<h3 class="h3 h3--bg-color-1">
+							TypeScript
+						</h3>
+						<div class="page__description text">
+							<p>
+								Typescript will display code errors through the console. To use it you first need to
+								install it globally with <code class="code">npm install -g typescript</code>.
+								Then you can use it with <code class="code">tsc</code> to compile the code as
+								<code class="code">tsc ./js/modules/pages/_pages-exercise-1-typescript.ts</code>,
+								this generates a <code class="code">js</code> file with the same name as the
+								<code class="code">ts</code> file.
+							</p>
+						</div>
+
+						<div class="page__content">
+							<form class="form" action="">
+								<fieldset class="fieldset">
+									<div class="form__column form__column--3">
+										<div class="form__item">
+											<label for="inputNum1" class="label">
+												Number 1
+											</label>
+											<input type="number" name="num1" id="ej1TSInputNum1"
+												class="form__field form__field--color-1">
+										</div>
+
+										<div class="form__item">
+											<label for="inputNum2" class="label">
+												Number 2
+											</label>
+											<input type="number" name="num2" id="ej1TSInputNum2"
+												class="form__field form__field--color-1">
+										</div>
+									</div>
+								</fieldset>
+
+								<div class="form__button-list">
+									<button id="ej1TSButtonSum" class="button button--bg-color-1">
+										Sum
+									</button>
+									<button id="ej1TSButtonReset" class="button button--line-color-1">
+										Reset
+									</button>
+								</div>
+							</form>
+
+							<div class="form__result">
+								<p>
+									Result:
+									<span id="ej1TSResultSum" class="form__result--value">
 										num1 + num2
 									</span>
 								</p>
@@ -123,7 +181,7 @@
 			</div>
 		</footer>
 
-		<script src="js/scripts.js" type="module"></script>
+		<script src="./js/scripts.js" type="module"></script>
 	</body>
 
 </html>
