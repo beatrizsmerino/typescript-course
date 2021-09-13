@@ -6,13 +6,18 @@
 	"dependencies": {},
 	"devDependencies": {
 		"live-server": "^1.2.1",
+		"nodemon": "^2.0.12",
 		"sass": "^1.39.2"
 	},
 	"scripts": {
 		"serve": "live-server --port=8080 --entry-file=./index.html",
-		"js": "tsc",
-		"css": "sass scss/styles.scss css/styles.min.css",
-		"build": "npm run css && npm run js && npm run serve"
+		"build:css": "sass scss/styles.scss css/styles.min.css",
+		"build:js": "tsc",
+		"build": "npm run build:css && npm run build:js",
+		"watch:css": "nodemon -e scss -x 'npm run build:css'",
+		"watch:js": "nodemon -e scss -x 'npm run build:js'",
+		"watch": "npm run watch:css && npm run watch:js",
+		"dev": "npm run build && npm run serve && npm run watch"
 	},
 	"author": "Beatriz Sopeña Merino <beatrizsmerino@gmail.com>",
 	"license": "ISC"
