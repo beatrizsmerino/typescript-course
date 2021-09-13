@@ -6,12 +6,12 @@
 
 
 
-const buttonSum = document.getElementById("ej1VjButtonSum");
-const buttonReset = document.getElementById("ej1VjButtonReset");
-const resultSum = document.getElementById("ej1VjResultSum");
-const inputNum1 = document.getElementById("ej1VjInputNum1");
-const inputNum2 = document.getElementById("ej1VjInputNum2");
-const inputNumFormat = document.getElementById("ej1VjInputNumFormat");
+const buttonSum = document.getElementById("ej1JSButtonSum");
+const buttonReset = document.getElementById("ej1JSButtonReset");
+const resultSum = document.getElementById("ej1JSResultSum");
+const inputNum1 = document.getElementById("ej1JSInputNum1");
+const inputNum2 = document.getElementById("ej1JSInputNum2");
+const inputNumFormat = document.getElementById("ej1JSInputNumFormat");
 
 
 function sumNumbers(num1, num2) {
