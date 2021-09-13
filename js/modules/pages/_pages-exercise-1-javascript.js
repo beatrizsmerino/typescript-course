@@ -34,7 +34,7 @@ function resetValue(fields) {
 
 
 function init() {
-	console.log("EXERCISE 1");
+	console.log("EXERCISE 1. Javascript");
 
 	buttonSum.addEventListener("click", function (event) {
 		event.preventDefault();

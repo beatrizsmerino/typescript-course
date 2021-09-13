@@ -10,8 +10,9 @@
 	},
 	"scripts": {
 		"serve": "live-server --port=8080 --entry-file=./index.html",
+		"js": "tsc",
 		"css": "sass scss/styles.scss css/styles.min.css",
-		"build": "npm run css && npm run serve"
+		"build": "npm run css && npm run js && npm run serve"
 	},
 	"author": "Beatriz Sopeña Merino <beatrizsmerino@gmail.com>",
 	"license": "ISC"
