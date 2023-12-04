@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server",
-    "build:js": "tsc --watch",
+    "start": "npm run serve && npm run build:js",
+    "serve": "lite-server",
+    "build:js": "tsc --watch"
   },
   "author": "Beatriz Sopeña Merino <beatrizsmerino@gmail.com>",
   "license": "ISC",
