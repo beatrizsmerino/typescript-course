@@ -1,3 +1,4 @@
+(function() {
 const button = document.querySelector('button');
 const input1 = document.getElementById('num1')! as HTMLInputElement;
 const input2 = document.getElementById('num2')! as HTMLInputElement;
@@ -10,3 +11,4 @@ button.addEventListener('click', function () {
 	const result = add(+input1.value, +input2.value);
 	console.log(result);
 });
+})();
