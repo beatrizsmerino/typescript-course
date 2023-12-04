@@ -18,16 +18,12 @@
 		];
 		console.table(dataLog);
 
-		if(typeof num1 !== "number" || typeof num2 !== "number") {
-			throw new Error(`Invalid input!`);
-		}
-
 		return num1 + num2;
 	}
 
 	if (button) {
 		button.addEventListener("click", function () {
-			const result = add(input1.value, +input2.value);
+			const result = add(+input1.value, +input2.value);
 			console.log(result);
 		});
 	}
