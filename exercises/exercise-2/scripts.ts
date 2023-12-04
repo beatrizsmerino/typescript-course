@@ -2,7 +2,7 @@
 	const button = document.querySelector("button");
 	const input1 = document.getElementById("num1")! as HTMLInputElement;
 	const input2 = document.getElementById("num2")! as HTMLInputElement;
-	const outputResult = document.getElementById("result");
+	const outputResult = document.getElementById("result") as HTMLElement;
 
 	function add(num1: number, num2: number) {
 		const dataLog = [
