@@ -18,6 +18,10 @@
 		];
 		console.table(dataLog);
 
+		if(typeof num1 !== "number" || typeof num2 !== "number") {
+			throw new Error(`Invalid input!`);
+		}
+
 		return num1 + num2;
 	}
 
