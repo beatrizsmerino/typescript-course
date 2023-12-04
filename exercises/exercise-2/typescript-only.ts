@@ -27,7 +27,7 @@
 
 	if (button) {
 		button.addEventListener("click", function () {
-			const result = add(+input1.value, +input2.value);
+			const result = add(input1.value, +input2.value);
 			console.log(result);
 		});
 	}
