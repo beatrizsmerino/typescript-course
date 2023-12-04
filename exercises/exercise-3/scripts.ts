@@ -22,15 +22,15 @@
 
 	// const number1 = 5; // 5.0
 
-	// let number1;
+	// let number1; // any
 	// number1 = '5'; // It's allowed
 
 	let number1: number; // It's better to indicate the type instead wait for Typescript inference.
 	number1 = 5;
 
-	const number2 = 2.8;
-	const printResult = true;
-	let resultPhrase = "Result is: ";
+	const number2 = 2.8; // number
+	const printResult = true; // boolean
+	let resultPhrase = "Result is: "; // string
 	// resultPhrase = 3; // Throws an error. It is not allowed change the type.
 
 	add(number1, number2, printResult, resultPhrase);
