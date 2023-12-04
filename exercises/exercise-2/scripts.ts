@@ -25,7 +25,7 @@
 	if (button) {
 		button.addEventListener("click", function () {
 			const result = add(+input1.value, +input2.value);
-			outputResult.innerHTML = result;
+			outputResult.innerHTML = result.toString();
 			console.log(result);
 		});
 	}
