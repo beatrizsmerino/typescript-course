@@ -1,5 +1,6 @@
 "use strict";
 (function () {
+    console.log("Hello from exercise 3!");
     function add(num1, num2, showResult, phrase) {
         if (typeof num1 !== "number" || typeof num2 !== "number") {
             throw new Error("Invalid input!");

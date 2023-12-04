@@ -1,4 +1,6 @@
 (function () {
+	console.log("Hello from exercise 3!");
+
 	function add(
 		num1: number,
 		num2: number,
