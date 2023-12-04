@@ -7,8 +7,10 @@
 		return num1 + num2;
 	}
 
-	button.addEventListener("click", function () {
-		const result = add(+input1.value, +input2.value);
-		console.log(result);
-	});
+	if(button) {
+		button.addEventListener("click", function () {
+			const result = add(+input1.value, +input2.value);
+			console.log(result);
+		});
+	}
 })();
