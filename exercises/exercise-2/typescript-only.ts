@@ -4,6 +4,20 @@
 	const input2 = document.getElementById("num2")! as HTMLInputElement;
 
 	function add(num1: number, num2: number) {
+		const dataLog = [
+			{
+				number: "num1",
+				value: num1,
+				type: typeof num1,
+			},
+			{
+				number: "num2",
+				value: num2,
+				type: typeof num2,
+			},
+		];
+		console.table(dataLog);
+
 		return num1 + num2;
 	}
 

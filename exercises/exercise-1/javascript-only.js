@@ -5,6 +5,20 @@
 	const outputResult = document.getElementById("result");
 
 	function add(num1, num2) {
+		const dataLog = [
+			{
+				number: 'num1',
+				value: num1,
+				type: typeof num1,
+			},
+			{
+				number: 'num2',
+				value: num2,
+				type: typeof num2,
+			},
+		];
+		console.table(dataLog);
+
 		return num1 + num2;
 	}
 
