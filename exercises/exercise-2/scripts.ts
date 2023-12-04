@@ -2,6 +2,7 @@
 	const button = document.querySelector("button");
 	const input1 = document.getElementById("num1")! as HTMLInputElement;
 	const input2 = document.getElementById("num2")! as HTMLInputElement;
+	const outputResult = document.getElementById("result");
 
 	function add(num1: number, num2: number) {
 		const dataLog = [
@@ -24,6 +25,7 @@
 	if (button) {
 		button.addEventListener("click", function () {
 			const result = add(+input1.value, +input2.value);
+			outputResult.innerHTML = result;
 			console.log(result);
 		});
 	}
