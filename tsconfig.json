@@ -88,5 +88,10 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  }
+  },
+  "exclude": [ /* Exclude specific files from the compilation process. By default, the `node_modules` folder is excluded in order to avoid the compilation of third-party modules. */
+    "exercises/exercise-8/**/*.ts"
+  ],
+  // "include": [], /* List of file or folder patterns to include in the compilation. */
+  // "files": [] /* Individual files to be compiled. Useful for small projects or specific tests. */
 }
