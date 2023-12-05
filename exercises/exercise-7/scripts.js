@@ -1,9 +1,9 @@
 "use strict";
 (function () {
     console.log("Hello from exercise 7!");
-    var userInput;
-    var userName;
-    var user;
+    let userInput;
+    let userName;
+    let user;
     userInput = 5;
     userInput = "Hello world!";
     userName = user;
