@@ -13,15 +13,10 @@
             return result;
         }
     }
-    // const number1 = 5; // 5.0
-    // let number1; // any
-    // number1 = '5'; // It's allowed
-    var number1; // It's better to indicate the type instead wait for Typescript inference.
+    var number1;
     number1 = 5;
-    var number2 = 2.8; // number
-    var printResult = true; // boolean
-    var resultPhrase = "Result is: "; // string
-    // resultPhrase = 3; // Throws an error. It is not allowed change the type.
+    var number2 = 2.8;
+    var printResult = true;
+    var resultPhrase = "Result is: ";
     add(number1, number2, printResult, resultPhrase);
-    // add(2, "1", false, ""); // Throws an error. The 'add' function expected a 'number' as a second parameter.
 })();
