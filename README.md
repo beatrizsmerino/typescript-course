@@ -12,7 +12,7 @@
 
 This repository was created to learn and test the **TypeScript** language.
 
-## 📌 Development
+## 📌 Commands
 
 This project uses the [npm scripts](https://docs.npmjs.com/cli/scripts) to run the development environment.
 
