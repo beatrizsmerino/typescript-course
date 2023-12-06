@@ -27,7 +27,15 @@
 		console.log("Clicked! " + message);
 	}
 	// If the `strictBindCallApply` rule is disabled, the code will not throw an error.
+	// if (button4) {
+	// 	button4.addEventListener("click", clickHandler.bind(null)); // Throws an error if 'strictBindCallApply: true'.
+	// }
+
+	// TypeScript, with `strictBindCallApply` enabled, will flag this as an error because the function signature does not match what `bind` expects.
 	if (button4) {
-		button4.addEventListener("click", clickHandler.bind(null));
+		button4.addEventListener(
+			"click",
+			clickHandler.bind(null, "Your welcome!")
+		);
 	}
 })();
