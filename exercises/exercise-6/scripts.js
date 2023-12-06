@@ -5,17 +5,17 @@
         return input1 + input2;
     }
     function printResult(input) {
-        console.log(`Result: ${input}`);
+        console.log("Result: ".concat(input));
     }
     printResult(add(1, 2));
-    let combineValues;
+    var combineValues;
     combineValues = add;
     console.log(combineValues(8, 8));
     function addAndHandle(input1, input2, callbackFunction) {
-        const result = input1 + input2;
+        var result = input1 + input2;
         callbackFunction(result);
     }
-    addAndHandle(10, 20, (result) => {
+    addAndHandle(10, 20, function (result) {
         console.log(result);
     });
 })();
