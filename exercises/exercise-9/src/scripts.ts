@@ -8,7 +8,15 @@
 	
 	// Using the 'strictNullChecks: false' rule in 'tsconfig' will not throw an error on DOM elements.
 	const button2 = document.querySelector("#button2"); // null
-	button2.addEventListener("click", () => {
-		console.log("Clicked!");
-	});
+	// button2.addEventListener("click", () => {
+	// 	console.log("Clicked!");
+	// });
+
+	// It is recommended to use 'strictNullChecks: true' and check if the button exists with Javascript
+	const button3 = document.querySelector("#button3");
+	if(button3) {
+		button3.addEventListener("click", () => {
+			console.log("Clicked!");
+		});
+	}
 })();
