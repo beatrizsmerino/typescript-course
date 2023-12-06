@@ -43,4 +43,4 @@ npm run build:js
 ## 📌 RESOURCES
 
 - YouTube: [TypeScript Course for Beginners 2021 - Learn TypeScript from Scratch!](https://www.youtube.com/watch?v=BwuLxPH8IDs)
-- pro.academind: [Understanding TypeScript](https://pro.academind.com/p/understanding-typescript)
+- Academind: [Understanding TypeScript](https://pro.academind.com/p/understanding-typescript)
