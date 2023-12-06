@@ -3,5 +3,8 @@
 
 	console.log("This is the 'analitics.js' file");
 
-	const name: string = 30;
+	// Uncomment this error to see how the `noEmitOnError` rule in `tsconfig` works.
+	// const name: string = 30; // Throws an error
+
+
 })();
