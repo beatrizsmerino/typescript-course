@@ -22,10 +22,22 @@ This project uses the [npm scripts](https://docs.npmjs.com/cli/scripts) to run t
 npm install
 ```
 
-### Compile TypeScript files to JavaScript files
+### Start server and generate JavaScript files
 
 ```bash
-tsc './path/nameFile.ts'
+npm run start
+```
+
+### Launch development server
+
+```bash
+npm run serve
+```
+
+### Watch and build JavaScript files
+
+```bash
+npm run build:js
 ```
 
 ## 📌 RESOURCES
