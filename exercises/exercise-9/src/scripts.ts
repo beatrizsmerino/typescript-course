@@ -38,4 +38,15 @@
 			clickHandler.bind(null, "Your welcome!")
 		);
 	}
+
+	function rest(n1: number, n2: number, n3: number) {
+		let counter = 0; // 'noUnusedLocals: true' not Throws an error
+		console.log(counter);
+
+		if (n1 + n2 > 0) {
+			return n1 + n2;
+		}
+		// return; // 'noImplicitReturns: true' not Throws an error
+	}
+	rest(1, 2, 30); // 'noUnusedParameters: true' not Throws an error
 })();
