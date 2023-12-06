@@ -12,11 +12,6 @@
 
 This repository was created to learn and test the **TypeScript** language.
 
-### Exercises
-
--   [Exercise 1](exercise-1/README.md). Adding numbers with Vanilla JavaScript
--   [Exercise 2](exercise-2/README.md). Adding numbers with TypeScript
-
 ## 📌 DEVELOPMENT
 
 This project uses the [npm scripts](https://docs.npmjs.com/cli/scripts) to run the development environment.
