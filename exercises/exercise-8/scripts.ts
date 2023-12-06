@@ -3,4 +3,9 @@
 
 	let text = "This does not transpile";
 	console.log(text);
+
+	const button = document.querySelector("button")!;
+	button.addEventListener("click", () => {
+		console.log("Clicked!");
+	});
 })();
