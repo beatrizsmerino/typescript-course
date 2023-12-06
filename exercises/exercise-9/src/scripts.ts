@@ -19,4 +19,15 @@
 			console.log("Clicked!");
 		});
 	}
+
+	// In `clickHandler.bind(null)`, you are binding `null` as the `this` for `clickHandler`, but you are not providing the `message` argument that `clickHandler` expects.
+
+	const button4 = document.querySelector("#button4");
+	function clickHandler(message: string) {
+		console.log("Clicked! " + message);
+	}
+	// If the `strictBindCallApply` rule is disabled, the code will not throw an error.
+	if (button4) {
+		button4.addEventListener("click", clickHandler.bind(null));
+	}
 })();
