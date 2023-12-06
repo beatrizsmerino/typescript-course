@@ -8,11 +8,11 @@
 
 ![Typescript Course](README/images/typescript-course.svg)
 
-## 📌 DESCRIPTION
+## 📌 Description
 
 This repository was created to learn and test the **TypeScript** language.
 
-## 📌 DEVELOPMENT
+## 📌 Development
 
 This project uses the [npm scripts](https://docs.npmjs.com/cli/scripts) to run the development environment.
 
@@ -40,7 +40,7 @@ npm run serve
 npm run build:js
 ```
 
-## 📌 RESOURCES
+## 📌 Resources
 
 - YouTube: [TypeScript Course for Beginners 2021 - Learn TypeScript from Scratch!](https://www.youtube.com/watch?v=BwuLxPH8IDs)
 - Academind: [Understanding TypeScript](https://pro.academind.com/p/understanding-typescript)
