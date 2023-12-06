@@ -8,4 +8,6 @@
 	button.addEventListener("click", () => {
 		console.log("Clicked!");
 	});
+
+	console.log("This is the 'scripts.js' file");
 })();
