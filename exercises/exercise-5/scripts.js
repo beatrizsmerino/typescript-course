@@ -47,3 +47,4 @@
     combinedNames = combineStringAndNumber("Max", "Ana", "as-text");
     console.log("combineStringAndNumber", combinedNames);
 })();
+//# sourceMappingURL=scripts.js.map

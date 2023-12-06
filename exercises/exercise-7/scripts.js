@@ -15,3 +15,4 @@
     }
     generateError("An error occurred", 500);
 })();
+//# sourceMappingURL=scripts.js.map

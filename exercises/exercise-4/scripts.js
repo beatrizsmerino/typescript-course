@@ -31,3 +31,4 @@
         console.log("User permission is not read-only");
     }
 })();
+//# sourceMappingURL=scripts.js.map
