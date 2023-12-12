@@ -336,3 +336,157 @@ console.log("📄", "poo.ts");
 
 	console.groupEnd();
 })();
+
+
+
+(function () {
+	class Software {
+		public name: string;
+
+		constructor() {
+			this.name = "";
+		}
+
+		public getName(): string {
+			return this.name;
+		}
+
+		public setName(name: string) {
+			this.name = name;
+		}
+	}
+
+	var softwareList: Array<string> = [];
+
+	function save() {
+		var name = (<HTMLInputElement>(document.getElementById("softwareName1"))).value.toString();
+
+		var softwareNew = new Software();
+		softwareNew.setName(name);
+		console.log(softwareNew);
+
+		var softwareName = softwareNew.getName();
+		console.log(softwareName);
+
+		softwareList.push(softwareName);
+		console.log(softwareList);
+
+		var list = "";
+		for (var i = 0; i < softwareList.length; i++) {
+			list = list + "<li>" + softwareList[i] + "</li>";
+		}
+
+		var softwareListDOM = <HTMLElement>(document.getElementById("softwareList1"));
+		softwareListDOM.innerHTML = list;
+
+		(<HTMLInputElement>document.getElementById("softwareName1")).value = "";
+	}
+
+	var softwareFormDOM = <HTMLElement>(document.getElementById("formAddSoftware1"));
+	softwareFormDOM.addEventListener("submit", function (event) {
+		console.group("Exercise 1: Class, constructor, public properties and methods, TS types, type assertion and DOM manipulation");
+
+		event.preventDefault();
+		save();
+
+		console.groupEnd();
+	});
+})();
+
+
+
+(function () {
+
+	class Software {
+		public name: string;
+		public version: string;
+
+		constructor(name: string, version: string) {
+			this.name = name;
+			this.version = version;
+		}
+
+		protected getName(): string {
+			return this.name;
+		}
+
+		protected setName(name: string) {
+			this.name = name;
+		}
+
+		protected getVersion(): string {
+			return this.version;
+		}
+
+		protected setVersion(version: string) {
+			this.version = version;
+		}
+	}
+
+
+	type SoftwareItem = {
+		name: string;
+		version: string;
+	};
+
+	let softwareList: SoftwareItem[] = [];
+
+
+	function ensureElement<T extends HTMLElement>(element: HTMLElement | null, type: new () => T): T {
+		if (element !== null && element instanceof HTMLElement) {
+			if (element instanceof type) {
+				return element as T;
+			}
+		}
+		throw new Error(`${element} is not found or is not a '${type.name}'`);
+	}
+
+	const isHTMLElement = (element: HTMLElement | null) => ensureElement(element, HTMLElement);
+	const isHTMLInputElement = (element: HTMLElement | HTMLInputElement | null) => ensureElement(element, HTMLInputElement);
+	const isHTMLFormElement = (element: HTMLElement | HTMLFormElement | null) => ensureElement(element, HTMLFormElement);
+
+	// isHTMLFormElement(document.getElementById("softwareButton2")); // Throws an error
+
+
+	function updateData(softwareList: SoftwareItem[]): void {
+		let softwareListDOM = isHTMLElement(document.getElementById("softwareList2"));
+
+		softwareListDOM.innerHTML = "";
+
+		softwareList.forEach((software) => {
+			let listItem = document.createElement("li");
+			listItem.textContent = `${software.name} - ${software.version}`;
+			softwareListDOM.appendChild(listItem);
+		});
+	}
+
+
+	function saveData(): void {
+		let nameInputDOM = isHTMLInputElement(document.getElementById("softwareName2"));
+		let versionInputDOM = isHTMLInputElement(document.getElementById("softwareVersion2"));
+
+		let nameValue = nameInputDOM.value;
+		let versionValue = versionInputDOM.value;
+
+		let softwareNew = new Software(nameValue, versionValue);
+		console.log(softwareNew);
+
+		softwareList.push(softwareNew);
+		console.log(softwareList);
+
+		nameInputDOM.value = "";
+		versionInputDOM.value = "";
+	}
+
+
+	let addSoftwareForm = isHTMLFormElement(document.getElementById("formAddSoftware2"));
+	addSoftwareForm.addEventListener("submit", function (event) {
+		console.group("Exercise 2: class, constructor, public properties, protected methods, generic type guard function, dynamic DOM updates and error handling");
+
+		event.preventDefault();
+		saveData();
+		updateData(softwareList);
+
+		console.groupEnd();
+	});
+})();
